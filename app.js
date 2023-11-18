@@ -4,7 +4,7 @@ const app=express();
 const morgan=require('morgan');
 const blogRoutes=require('./routes/blogRoutes');
 const { render } = require('ejs');
-const dbURI='mongodb+srv://sudumaster:Test1234@nodeblogs.jrc0caj.mongodb.net/Node-Blogs?retryWrites=true&w=majority';
+//mongodb URI
 mongoose.connect(dbURI)
 .then(result=>app.listen(3000))
 .catch(err=>console.log(err));
